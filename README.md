@@ -23,5 +23,22 @@ on Android you running two applications **Sender** and **Receiver**. **Sender** 
 8. Upload some examples to the board to make sure everything is working. Open **File > Examples > MySignals > Sensor > sensor_airflow** then upload: **Sketch > Upload** and wait untill the message "upload done" appear. Now you can open **Tools > Serial monitor** to check data coming from the sensor. If you see weird characters just try to change **baud** at the bottom right.
 
 ### Android Studio
-1. Create new project App Name : MySignalsReceiver, Company domain : yourname.com > next > Target Android devices: default settings > Empty Activity : MainActivity
-2. f
+1. Create new project **App Name : MySignalsReceiver, Company domain : yourname.com > next > Target Android devices: default settings > Empty Activity : MainActivity**
+2. Go to **Res > Layout > Activity_main.xml**, double click it, drag button to component tree. Repeat for the second button.
+3. Go to **Res > Values > Strings**, open in Editor, press plus button, **key: send button, Devault value: Start**, the same thing for the Stop button.Rename buttons IDs as ***start_button*** and **stop_button** respectively.
+4. In Main_activity.java add 2 functions: 
+
+``` Java
+/** Called when the user taps the Start button */
+    public void onStart(View view) {
+        // Do something in response to button
+    }
+
+    /** Called when the user taps the Stop button */
+    public void onStop(View view) {
+        // Do something in response to button
+    }
+```
+
+5. If you see View is highlighted with red, press Alt+Enter and Import class in drop-down menu.
+6. Go to the button propertie
