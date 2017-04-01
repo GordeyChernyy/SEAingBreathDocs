@@ -41,4 +41,38 @@ You have to run two applications on Android:  **Sender** and **Receiver**. **Sen
 ```
 
 5. If you see View is highlighted with red, press Alt+Enter and Import class in drop-down menu.
-6. Go to the button propertiex
+6. Go to the button properties and rename the buttons.
+7. Go to AndroidManifest.xml and paste this code after `</application>`
+
+```xml
+/** Called when the user taps the Start button */
+    public void onStart(View view) {
+        // Do something in response to button
+    }
+
+    /** Called when the user taps the Stop button */
+    public void onStop(View view) {
+        // Do something in response to button
+    }
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+```
+
+This allows bluetooth devices search. 
+
+Paste this [code](link) into the MainActivity. Don't forget to replace package com.name to your name. 
+
+Now we have to download and add [MySignals Android SDK](http://downloads.libelium.com/mysignals/mysignals_android/MySignalsConnectKit.jar.zip). Copy the unzipped file in Finder and go to to Project, open App and go to libs, select libs folder and press cmd+v. Then select mysignalsconnect.jar, right click > add as library. 
+
+Now we'll create a new class BLEService for Bluetooth service. 
+
+
+      
