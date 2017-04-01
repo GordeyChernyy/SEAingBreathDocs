@@ -11,7 +11,7 @@ What is needed:
 
 ### Basic concept
 
-on Android you running two applications **Sender** and **Receiver**. **Sender** is receiving data coming from **MySignals BLE module** over Bluetooth and sending it to the **Receiver** which is a Unity App with a custom android plugin. **Sender** always running in the backround as **andorid service**
+You have to run two applications on Android:  **Sender** and **Receiver**. **Sender** is receiving data coming from **MySignals BLE module** over Bluetooth and sending it to the **Receiver** which is  Unity app using a custom Android plugin. **Sender** is always running in the backround as **Android service**
 
 ### Arduino setup
 1. Install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
@@ -41,4 +41,4 @@ on Android you running two applications **Sender** and **Receiver**. **Sender** 
 ```
 
 5. If you see View is highlighted with red, press Alt+Enter and Import class in drop-down menu.
-6. Go to the button propertie
+6. Go to the button propertiex
