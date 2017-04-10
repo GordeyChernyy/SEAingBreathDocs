@@ -11,7 +11,7 @@ What is needed:
 
 ### Basic concept
 
-You have to run two applications on Android:  **Sender** and **Receiver**. **Sender** is receiving data coming from **MySignals BLE module** over Bluetooth and sending it to the **Receiver** which is  Unity app using a custom Android plugin. **Sender** is always running in the backround as **Android service**
+You have to run two applications on Android:  **BridgeApp** and **UnityApp**. **BridgeApp** is receiving data coming from **MySignals BLE module** over Bluetooth and sending it to the **UnityApp** which is Unity app using a custom Android plugin. **Sender** is always running in the backround as **Android service**
 
 ### Arduino setup
 1. Install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
