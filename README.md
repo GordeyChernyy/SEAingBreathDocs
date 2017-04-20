@@ -1,5 +1,5 @@
+This is not complete tutorial, but there is a complete source code for [Android Bridge App](https://github.com/GordeyChernyy/AndroidUnityBridge) and [Unity App](https://github.com/GordeyChernyy/AndroidServiceReceiver)
 ## How to use MySignals HW with Android phone using Unity 3d
-
 What is needed:
 
 * [MySignals HW](https://www.cooking-hacks.com/mysignals-hw-ehealth-medical-biometric-arduino-complete-kit-ble)
